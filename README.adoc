@@ -1,0 +1,10 @@
+= purescript-urbit-http-api
+
+wrapping Urbit's official `http-api` npm pkg.
+
+== building
+
+[source]
+----
+spago build
+----
