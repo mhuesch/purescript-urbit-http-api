@@ -1,3 +1,5 @@
 import * as Urbit from '@urbit/http-api';
 
-export function urbitAuthenticate = ship => url => code => verbose => ha.Urbit.authenticate({ ship, url, code, verbose });
+export let urbitAuthenticate = ship => url => code => verbose => () => Urbit.Urbit.authenticate({ ship, url, code, verbose });
+
+export let urbitCookie = urbit => () => urbit.cookie || "";
